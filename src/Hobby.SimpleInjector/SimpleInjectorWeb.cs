@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using Hobby.Data;
+﻿using Hobby.Data;
 using Hobby.Data.Interface;
 using Hobby.Services;
 using Hobby.Services.Interfaces;
 using SimpleInjector;
-using SimpleInjector.Diagnostics;
-using SimpleInjector.Extensions.LifetimeScoping;
 
 namespace Hobby.SimpleInjector
 {

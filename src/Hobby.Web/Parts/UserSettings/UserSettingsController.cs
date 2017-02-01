@@ -1,14 +1,6 @@
 ﻿using Hobby.Common.Authentication;
-using Hobby.DTO;
-using Hobby.Entities;
 using Hobby.Services.Interfaces;
-using Hobby.Web.Controllers;
 using Hobby.Web.Parts.UserSettings.Models;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Hobby.Web.Parts.UserSettings
