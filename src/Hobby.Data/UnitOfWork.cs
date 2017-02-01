@@ -20,6 +20,10 @@ namespace Hobby.Data
             _context = new HobbyDbContext();
         }      
 
+        public IRepository<Activity> Activities
+        {
+            get { return GetRepository<Activity>(); }
+        }
         public IRepository<User> Users
         {
             get { return GetRepository<User>(); }

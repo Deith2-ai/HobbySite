@@ -23,6 +23,11 @@ namespace Hobby.DTO
 
         public virtual string Email { get; set; }
 
-        public virtual string Password { get; set; }        
+        public virtual string Password { get; set; }
+
+        public virtual string City { get; set; }
+
+        public virtual string Avatar { get; set; }
+        
     }
 }

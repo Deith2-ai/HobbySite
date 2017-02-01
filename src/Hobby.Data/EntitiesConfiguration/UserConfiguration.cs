@@ -14,6 +14,14 @@ namespace Hobby.Data.ConfigurationEntities
 
             Property(e => e.Email).IsRequired();
 
+            Property(e => e.City).IsOptional();
+
+            Property(e => e.Avatar).IsOptional();
+
+            HasMany(e => e.Activities)
+                .WithRequired(e => e.User)
+                .WillCascadeOnDelete(false);
+
             HasMany(e => e.Settings)
                 .WithRequired(e => e.User)
                 .HasForeignKey(e => e.IdUser)

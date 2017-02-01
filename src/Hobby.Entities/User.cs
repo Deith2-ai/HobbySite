@@ -21,6 +21,12 @@ namespace Hobby.Entities
 
         public virtual string Password { get; set; }
 
+        public virtual string City { get; set; }
+
+        public virtual string Avatar { get; set; }
+
+        public virtual ICollection<Activity> Activities { get; set; }
+
         public virtual ICollection<Setting> Settings { get; set; }
 
         public virtual ICollection<UserPermission> UserPermissions { get; set; }
