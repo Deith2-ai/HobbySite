@@ -2,7 +2,7 @@
 
 namespace Hobby.Data.EntitiesConfiguration
 {
-    public partial class UserPermissionConfiguration : EntityConfigurationBase<UserPermission>
+    public class UserPermissionConfiguration : EntityConfigurationBase<UserPermission>
     {
         public UserPermissionConfiguration()
             : base("UserPermissions")
