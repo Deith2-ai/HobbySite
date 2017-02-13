@@ -1,14 +1,5 @@
-﻿using Hobby.Data;
-using Hobby.Data.Interface;
-using Hobby.Ninject.Containers;
-using Hobby.Services;
-using Hobby.Services.Interfaces;
+﻿using Hobby.Ninject.Containers;
 using Ninject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hobby.Ninject.Commons
 {

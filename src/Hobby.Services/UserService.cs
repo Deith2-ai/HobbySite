@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Hobby.Common.Authentication;
-using Hobby.Common.Enums;
-using Hobby.Data.Interface;
+﻿using Hobby.Data.Interface;
 using Hobby.DTO;
 using Hobby.Entities;
 using Hobby.Services.Interfaces;

@@ -8,8 +8,6 @@ using Hobby.Services.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hobby.Services
 {
@@ -25,7 +23,7 @@ namespace Hobby.Services
         public UserDTO CheckUser(string login, string password)
         {
             var passwordSHA = password.getSHA1();
-            var entity = _uow.Users.FirstOrDefaultAsNoTracking(p => p.Email == login && p.Password == passwordSHA);
+            var entity = _uow.Users.FirstOrDefaultAsNoTracking(p => p.Email == login && p.Password == passwordSHA);           
 
             if (entity != null)
             {
