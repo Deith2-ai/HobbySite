@@ -21,6 +21,6 @@ namespace Hobby.Entities
 
         public virtual string Description { get; set; }
 
-        public virtual ICollection<UserPermission> UserPermissions { get; set; }
+        //public virtual ICollection<UserPermission> UserPermissions { get; set; }
     }
 }

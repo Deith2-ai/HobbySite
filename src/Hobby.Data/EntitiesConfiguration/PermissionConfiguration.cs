@@ -10,10 +10,10 @@ namespace Hobby.Data.EntitiesConfiguration
             Property(e => e.Name).IsRequired();
             Property(e => e.Deleted).IsRequired();
 
-            HasMany(e => e.UserPermissions)
-               .WithRequired(e => e.Permission)
-               .HasForeignKey(e => e.IdPermission)
-               .WillCascadeOnDelete(false);
+            //HasMany(e => e.UserPermissions)
+            //   .WithRequired(e => e.Permission)
+            //   .HasForeignKey(e => e.IdPermission)
+            //   .WillCascadeOnDelete(false);
         }
     }
 }

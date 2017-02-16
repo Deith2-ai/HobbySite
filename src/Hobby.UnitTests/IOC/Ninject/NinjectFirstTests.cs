@@ -1,15 +1,10 @@
 ﻿using Hobby.Common.Authentication;
 using Hobby.Data.Interface;
 using Hobby.DTO;
-using Hobby.Services.Interfaces;
+using Hobby.Entities;
 using Hobby.Services.Mappings;
 using Hobby.UnitTests.TestingTools;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Ninject;
 
 namespace Hobby.UnitTests.IOC.Ninject
@@ -37,6 +32,21 @@ namespace Hobby.UnitTests.IOC.Ninject
             uow.Save();
 
             Assert.IsNotNull(entity.Id);
+        }
+
+        [TestMethod]
+        public void MyTestMethod()
+        {
+            var uow = IoCNinjectProvider.Instance.Get<IUnitOfWork>();
+            var entity = new Permission
+            {
+                Name = "Admin",
+                Value = 1,
+                Description = "aaaa"
+            };
+
+            uow.Permissions.Add(entity);
+            uow.Save();
         }
     }
 }

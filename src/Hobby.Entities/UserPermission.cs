@@ -18,7 +18,7 @@ namespace Hobby.Entities
 
         public virtual DateTime? LastModifyDate { get; set; }
 
-        public virtual Permission Permission { get; set; }
+        //public virtual Permission Permission { get; set; }
 
         public virtual User User { get; set; }
     }
