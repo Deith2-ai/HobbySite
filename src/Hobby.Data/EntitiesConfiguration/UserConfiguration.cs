@@ -20,6 +20,7 @@ namespace Hobby.Data.ConfigurationEntities
 
             HasMany(e => e.Activities)
                 .WithRequired(e => e.User)
+                .HasForeignKey(e => e.IdUser)
                 .WillCascadeOnDelete(false);
 
             HasMany(e => e.Settings)

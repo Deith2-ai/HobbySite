@@ -25,7 +25,7 @@ namespace Hobby.Entities
 
         public virtual string Avatar { get; set; }
 
-        public virtual ICollection<Activity> Activities { get; set; }
+        public virtual ICollection<Activities> Activities { get; set; }
 
         public virtual ICollection<Setting> Settings { get; set; }
 

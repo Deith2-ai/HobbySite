@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hobby.Entities
 {
-    public class Activity : IEntity
+    public class Activities : IEntity
     {
         #region IEntity
         public virtual long Id { get; set; }
@@ -16,8 +16,10 @@ namespace Hobby.Entities
         public virtual byte[] RowVersion { get; set; }
         #endregion
 
+        public virtual long IdUser { get; set; }
+
         public virtual string ActivityName { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual User User { get; set; }        
     }
 }

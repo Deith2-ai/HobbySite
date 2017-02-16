@@ -15,7 +15,7 @@ namespace Hobby.Data.Interface
 
         IRepository<UserPermission> UserPermissions { get; }
 
-        IRepository<Activity> Activities { get; }
+        IRepository<Activities> Activities { get; }
 
         void Save();
     }
