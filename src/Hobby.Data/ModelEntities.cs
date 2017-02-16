@@ -21,7 +21,7 @@ namespace Hobby.Data
         {
             Database.SetInitializer<HobbyDbContext>(new DropCreateDatabaseAlways<HobbyDbContext>());
 
-            ((IObjectContextAdapter)this).ObjectContext.CommandTimeout = 120;
+            //((IObjectContextAdapter)this).ObjectContext.CommandTimeout = 120;
             this.Configuration.LazyLoadingEnabled = true;
             this.Configuration.ProxyCreationEnabled = false;
         }

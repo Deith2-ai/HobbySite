@@ -12,7 +12,7 @@ namespace Hobby.DTO
         public virtual byte[] RowVersion { get; set; }
         #endregion
 
-        public virtual decimal IdUser { get; set; }
+        public virtual long IdUser { get; set; }
 
         public virtual string Name { get; set; }
 
