@@ -23,6 +23,5 @@ namespace Hobby.DTO
         public virtual string City { get; set; }
 
         public virtual string Avatar { get; set; }
-        
     }
 }

@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntitiesConfiguration\ActivitiesConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\CategorieConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\EntityConfigurationBase.cs" />
     <Compile Include="EntitiesConfiguration\PermissionConfiguration.cs" />

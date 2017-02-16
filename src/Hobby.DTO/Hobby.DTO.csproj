@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivitiesDTO.cs" />
     <Compile Include="CategorieDTO.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="PermissionDTO.cs" />

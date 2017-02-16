@@ -24,6 +24,7 @@ namespace Hobby.Data
         {
             get { return GetRepository<Activity>(); }
         }
+
         public IRepository<User> Users
         {
             get { return GetRepository<User>(); }
