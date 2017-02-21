@@ -27,7 +27,7 @@ namespace Hobby.Web.Controllers
         //[HobbyAuthorize(Roles = "Admin")]
         public ActionResult Index()
         {
-            var survey = new Hobby.DomainEvents.Domain.Survey();
+            var survey = new DomainEvents.Domain.Survey();
             survey.EndSurvey();
 
             logger.Trace("Sample trace message");

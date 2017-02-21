@@ -15,6 +15,8 @@ namespace Hobby.Services.Mappings
             target.LastName = source.LastName;
             target.Password = source.Password;
             target.Email = source.Email;
+            target.City = source.City;
+            target.Avatar = source.Avatar;
 
             return target;
         }
@@ -27,6 +29,8 @@ namespace Hobby.Services.Mappings
             target.LastName = source.LastName;
             target.Password = source.Password;
             target.Email = source.Email;
+            target.Avatar = source.Avatar;
+            target.City = source.City;
 
             return target;
         }
