@@ -58,6 +58,7 @@
     <Compile Include="EntitiesConfiguration\UserConfiguration.cs" />
     <Compile Include="EntitiesConfiguration\UserPermissionConfiguration.cs" />
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="ModelDBInitializer.cs" />
     <Compile Include="ModelEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork.cs" />

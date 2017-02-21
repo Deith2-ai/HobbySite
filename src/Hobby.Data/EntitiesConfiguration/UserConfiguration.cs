@@ -21,7 +21,7 @@ namespace Hobby.Data.ConfigurationEntities
 
             HasMany(e => e.UserPermissions)
                .WithRequired(e => e.User)
-               .HasForeignKey(e => e.IdPermission)
+               .HasForeignKey(e => e.IdUser)
                .WillCascadeOnDelete(false);
         }
     }

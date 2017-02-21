@@ -240,7 +240,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="connectionStrings.config" />
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-password.dir.js" />
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-view.ctrl.js" />
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-view.dir.js" />
@@ -260,6 +259,7 @@
     </Content>
     <Content Include="Scripts\AngularJSExample\controller.js" />
     <Content Include="Scripts\AngularJSExample\DIValue.js" />
+    <Content Include="connectionStrings.config" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -397,6 +397,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\StyleCop.MSBuild.4.7.50.0\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.4.7.50.0\build\StyleCop.MSBuild.Targets'))" />
   </Target>
+  <PropertyGroup>
+    <PreBuildEvent>copy /y "$(SolutionDir)Configuration\connectionStrings.config" "$(ProjectDir)connectionStrings.config"</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
