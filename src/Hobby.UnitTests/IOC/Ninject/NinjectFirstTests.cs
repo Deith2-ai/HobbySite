@@ -40,11 +40,11 @@ namespace Hobby.UnitTests.IOC.Ninject
             var uow = IoCNinjectProvider.Instance.Get<IUnitOfWork>();
             var entity = new Permission
             {
-                Name = "Admin",
+                Name = "AdminG",
                 Value = 1,
                 Description = "aaaa"
             };
-
+        
             uow.Permissions.Add(entity);
             uow.Save();
         }

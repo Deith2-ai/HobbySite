@@ -11,4 +11,4 @@ namespace Hobby.Services.Interfaces
 
         bool Register(UserDTO user);
     }
-}
+} 

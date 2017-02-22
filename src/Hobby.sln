@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hobby.Entities", "Hobby.Ent
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{875BA9BE-92F0-444B-8403-040BF6B55F33}"
 	ProjectSection(SolutionItems) = preProject
-		connectionStrings.config = connectionStrings.config
+		Configuration\connectionStrings.config = Configuration\connectionStrings.config
 		Settings.StyleCop = Settings.StyleCop
 	EndProjectSection
 EndProject
