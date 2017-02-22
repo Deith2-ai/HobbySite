@@ -34,6 +34,8 @@ namespace Hobby.SimpleInjector
 
             container.RegisterPerWebRequest<IUserService, UserService>();
 
+            container.RegisterPerWebRequest<IActivitiesService, ActivitiesService>();
+
             //Registration registration = container.GetRegistration(typeof(IUnitOfWork)).Registration;
 
             //registration.SuppressDiagnosticWarning(DiagnosticType.DisposableTransientComponent, "OK");

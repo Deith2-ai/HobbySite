@@ -203,6 +203,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AngularController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Parts\Profile\Models\ProfileModel.cs" />
+    <Compile Include="Parts\Profile\ProfileController.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -243,6 +245,8 @@
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-password.dir.js" />
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-view.ctrl.js" />
     <Content Include="Parts\Authorization\Scripts\modal-view\modal-view.dir.js" />
+    <Content Include="Parts\Profile\Scripts\profile-index.ctrl.js" />
+    <Content Include="Parts\Profile\Scripts\profile-index.srv.js" />
     <Content Include="Parts\UserSettings\Scripts\settings-view\settings-view.ctrl.js" />
     <Content Include="Parts\UserSettings\Scripts\settings-view\settings-view.srv.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -270,6 +274,7 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Parts\Chat\Views\Index.cshtml" />
     <Content Include="Parts\Chat\Views\Chat.cshtml" />
+    <Content Include="Parts\Profile\Views\Index.cshtml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
