@@ -28,13 +28,23 @@ namespace Hobby.Web.Controllers
             _activitiesService = activitiesService;
         }
 
+        [HobbyAuthorize]
+        public ActionResult Index()
+        {
+            var userActivities = _activitiesService.GetUserActivities(User.UserId);
+
+            return View();
+        }
+
+        [HttpPost]
+        [HobbyAuthorize]
         public ActionResult Index(ProfileViewModel model)
         {
             if (User.Identity.IsAuthenticated)
             {
                 var user = _userService.GetUserDTO(User.UserId);
                 var userActivities = _activitiesService.GetUserActivities(user.Id);
-             }
+            }
 
             return View();
         }
