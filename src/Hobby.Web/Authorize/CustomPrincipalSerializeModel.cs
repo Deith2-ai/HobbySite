@@ -4,7 +4,7 @@ namespace Hobby.Web.Authorize
 {
     public class CustomPrincipalSerializeModel
     {
-        public decimal UserId { get; set; }
+        public long UserId { get; set; }
 
         public string FirstName { get; set; }
 

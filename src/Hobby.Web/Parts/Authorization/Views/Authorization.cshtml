@@ -48,4 +48,8 @@
                 <pre>form = {{content | json}}</pre>
             </form>
             <button type="button" class="btn btn-danger" data-ng-click="cancel()">Anuluj</button>
+
+            <fb:login-button scope="public_profile,email"
+                             onlogin="checkLoginState();">
+            </fb:login-button>
         </modal>

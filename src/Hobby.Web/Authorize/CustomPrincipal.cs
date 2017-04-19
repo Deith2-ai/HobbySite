@@ -33,7 +33,7 @@ namespace Hobby.Web.Authorize
             this.Identity = new GenericIdentity(username);
         }
 
-        public decimal UserId { get; set; }
+        public long UserId { get; set; }
 
         public string Email { get; set; }
 
