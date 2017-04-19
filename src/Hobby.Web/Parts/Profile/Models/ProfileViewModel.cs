@@ -2,7 +2,7 @@
 
 namespace Hobby.Web.Parts.Profile.Models
 {
-    public class ProfileModel
+    public class ProfileViewModel
     {
         [Required]
         public decimal Id { get; set; }
