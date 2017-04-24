@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Scripts/AdminLTE/bootstrap/css")
+    @Styles.Render("~/Scripts/AdminLTE/dist/css")
+    @Styles.Render("~/Scripts/AdminLTE/dist/css/skins")
+
+    <meta name="description" content="The description of my page" />
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="@Url.Action("Index", "UserProfile")" class="logo">
+                <span class="logo-mini"><b>W</b>eb</span>
+                <span class="logo-lg"><b>Web</b>Application</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                               <li class="header">You have 4 messages</li>
+                                <li class="user-header">
+                                    @*<img src="~/Content/images/Emoticons_smile_smiley-15-512.png" class="img-circle" alt="User Image">*@
+
+                                    <p>
+                                       Test Darek
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="header">MENU</li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>@ViewBag.Title</h1>
+            </section>
+            <section class="content">
+                @RenderBody()
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.0
+            </div>
+            <strong>Copyright © 2016 DreamLab.</strong>
+            All rights
+            reserved.
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("menu", required: false)
+    @Scripts.Render("~/Scripts/AdminLTE/bootstrap/js")
+    @Scripts.Render("~/Scripts/AdminLTE/dist/js")
+</body>
+</html>
