@@ -64,10 +64,12 @@ namespace Hobby.Web
                "~/Scripts/AdminLTE/dist/js/app.js"));
 
             bundles.Add(new StyleBundle("~/Scripts/AdminLTE/dist/css").Include(
-                "~/Scripts/AdminLTE/dist/css/admin-lte.min.css"));
+                "~/Scripts/AdminLTE/dist/css/AdminLTE.min.css",
+                "~/Scripts/AdminLTE/dist/css/font-awesome.min.css"));
 
             bundles.Add(new StyleBundle("~/Scripts/AdminLTE/dist/css/skins").Include(
-                "~/Scripts/AdminLTE/dist/css/skins/_all-skins.min.css"));
+                "~/Scripts/AdminLTE/dist/css/skins/_all-skins.min.css",
+                "~/Scripts/AdminLTE/dist/css/skins/skin-blue.min.css"));
 
             // plugins | slimscroll
             //bundles.Add(new ScriptBundle("~/Scripts/AdminLTE/plugins/slimscroll/js").Include(

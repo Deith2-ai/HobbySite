@@ -264,6 +264,7 @@
     <Content Include="Scripts\AdminLTE\dist\css\alt\AdminLTE-select2.min.css" />
     <Content Include="Scripts\AdminLTE\dist\css\alt\AdminLTE-without-plugins.css" />
     <Content Include="Scripts\AdminLTE\dist\css\alt\AdminLTE-without-plugins.min.css" />
+    <Content Include="Scripts\AdminLTE\dist\css\font-awesome.min.css" />
     <Content Include="Scripts\AdminLTE\dist\css\skins\skin-black-light.css" />
     <Content Include="Scripts\AdminLTE\dist\css\skins\skin-black-light.min.css" />
     <Content Include="Scripts\AdminLTE\dist\css\skins\skin-black.css" />
@@ -1209,6 +1210,9 @@
     <Content Include="Scripts\AdminLTE\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Scripts\AdminLTE\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="Parts\UserProfile\Views\Index.cshtml" />
+    <Content Include="Scripts\AdminLTE\dist\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Scripts\AdminLTE\dist\fonts\fontawesome-webfont.woff" />
+    <Content Include="Scripts\AdminLTE\dist\fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
