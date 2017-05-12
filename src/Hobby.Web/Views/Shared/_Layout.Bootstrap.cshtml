@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -38,7 +39,7 @@
                                     @*<img src="~/Content/images/Emoticons_smile_smiley-15-512.png" class="img-circle" alt="User Image">*@
 
                                     <p>
-                                       Test Darek
+                                       @User.Identity.Name
                                     </p>
                                 </li>
                                 <li class="user-footer">
@@ -59,9 +60,9 @@
                 <ul class="sidebar-menu">
                     <li class="header">MENU</li>
                     <li>
-                        <a href="#" name="test">
+                        <a href="#" @Url.Action("Index","UserProfile")>
                             <i class="fa fa-trademark"></i>
-                            Test1
+                            @Resources.Layout.UserSettings
                         </a>
                     </li>                        
                     
