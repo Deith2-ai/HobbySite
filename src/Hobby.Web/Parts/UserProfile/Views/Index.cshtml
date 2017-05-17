@@ -1,6 +1,26 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@model Hobby.Web.Parts.UserProfile.Models.UserSettingsVM
+@{
+    ViewBag.Title = Resources.Layout.UserSettings;
     Layout = "~/Views/Shared/_Layout.Bootstrap.cshtml";
 }
 
-test
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    @Resources.Layout.UserSettings
+                </h3>
+            </div>
+            <div class="box-body" data-bind="with: Data()">
+                <div class="">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-4" })
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

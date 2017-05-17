@@ -22,14 +22,14 @@ namespace Hobby.Web.App_GlobalResources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CommonStrings {
+    public class ErrorMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CommonStrings() {
+        internal ErrorMessages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Hobby.Web.App_GlobalResources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Hobby.Web.App_GlobalResources.CommonStrings", typeof(CommonStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Hobby.Web.App_GlobalResources.ErrorMessages", typeof(ErrorMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,65 +61,11 @@ namespace Hobby.Web.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email.
+        ///   Looks up a localized string similar to {0}test.
         /// </summary>
-        public static string Email {
+        public static string test {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email jest wymagany.
-        /// </summary>
-        public static string EmailRequired {
-            get {
-                return ResourceManager.GetString("EmailRequired", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Pole jest wymagane.
-        /// </summary>
-        public static string FieldRequired {
-            get {
-                return ResourceManager.GetString("FieldRequired", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Imię.
-        /// </summary>
-        public static string FirstName {
-            get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nazwisko.
-        /// </summary>
-        public static string LastName {
-            get {
-                return ResourceManager.GetString("LastName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Hasło.
-        /// </summary>
-        public static string Password {
-            get {
-                return ResourceManager.GetString("Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Potwierdź hasło.
-        /// </summary>
-        public static string RepeatPassword {
-            get {
-                return ResourceManager.GetString("RepeatPassword", resourceCulture);
+                return ResourceManager.GetString("test", resourceCulture);
             }
         }
     }

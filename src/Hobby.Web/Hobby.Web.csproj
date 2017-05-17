@@ -195,6 +195,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\ErrorMessages.designer.cs">
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ToCopy.designer.cs">
+      <DependentUpon>ToCopy.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App_GlobalResources\Layout.designer.cs">
       <DependentUpon>Layout.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -231,6 +241,7 @@
     <Compile Include="Parts\Authorization\Models\RegisterModel.cs" />
     <Compile Include="Parts\BaseController.cs" />
     <Compile Include="Parts\Chat\ChatController.cs" />
+    <Compile Include="Parts\UserProfile\Models\UserSettingsVM.cs" />
     <Compile Include="Parts\UserProfile\UserProfileController.cs" />
     <Compile Include="Parts\UserSettings\Models\SettingsModel.cs" />
     <Compile Include="Parts\UserSettings\UserSettingsController.cs" />
@@ -1269,7 +1280,6 @@
     <Folder Include="Parts\Authorization\Styles\" />
     <Folder Include="Parts\Chat\Models\" />
     <Folder Include="Parts\Chat\Scripts\" />
-    <Folder Include="Parts\UserProfile\Models\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Chat\" />
     <Folder Include="Views\UserProfile\" />
@@ -1315,19 +1325,31 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\CommonStrings.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+    <EmbeddedResource Include="App_GlobalResources\CommonStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonStrings.Designer.cs</LastGenOutput>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\Layout.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
+    <EmbeddedResource Include="App_GlobalResources\Layout.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Layout.designer.cs</LastGenOutput>
-    </Content>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\ToCopy.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ToCopy.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\ErrorMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
